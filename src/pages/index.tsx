@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+const foo = "bla"
 
 export default function Home() {
   return (
