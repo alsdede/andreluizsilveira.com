@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-const foo = "bla"
+const foo = 'bla'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main >
+      <main>
         <h1>HOME</h1>
       </main>
     </div>
