@@ -29,7 +29,7 @@ const Menu = ({ username, loading }: MenuProps) => {
           <Link href="/" passHref>
             <S.MenuLink>Home</S.MenuLink>
           </Link>
-          <Link href="/games" passHref>
+          <Link href="/about" passHref>
             <S.MenuLink>About</S.MenuLink>
           </Link>
           <Link href="/contact" passHref>

@@ -10,7 +10,7 @@ const hero = {
   backgroundImage: '/img/andre.jpeg'
 }
 
-export default function Home() {
+export default function Contact() {
   return (
     <Container>
       <Menu />
