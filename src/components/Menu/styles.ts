@@ -7,6 +7,7 @@ export const Wrapper = styled.menu<MenuFullProps>`
     align-items: center;
     padding: ${theme.spacings.small} 0;
     position: relative;
+    margin-bottom: 6rem;
     z-index: ${isOpen ? theme.layers.menu : `calc(${theme.layers.menu} - 1)`};
   `}
 `

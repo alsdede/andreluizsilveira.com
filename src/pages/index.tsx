@@ -1,8 +1,10 @@
 import Menu from 'components/Menu'
 import { Container } from 'components/Container'
+import Hero from 'components/Hero'
 import Head from 'next/head'
 import Image from 'next/image'
-import Hero from 'components/Hero'
+
+import Paragraph from 'components/Paragraph'
 import ProjectItem from 'components/ProjectItem'
 import ProjectList from 'components/ProjectList'
 
@@ -15,6 +17,7 @@ const hero = {
 
 const PROJECTITEM = [
   {
+    id: 1,
     title: 'Portifolio',
     img: '/img/laptop.png',
     description:
@@ -22,6 +25,7 @@ const PROJECTITEM = [
     categories: ['FRONTEND', 'BACKEND', 'MOBILE']
   },
   {
+    id: 2,
     title: 'Portifolio 2',
     img: '/img/laptop.png',
     description:
@@ -29,6 +33,7 @@ const PROJECTITEM = [
     categories: ['FRONTEND']
   },
   {
+    id: 3,
     title: 'Portifolio 3',
     img: '/img/laptop.png',
     description:
@@ -44,8 +49,12 @@ export default function Home() {
         title={hero.title}
         subtitle={hero.subtitle}
         backgroundImage={hero.backgroundImage}
-        floatImage={hero.floatImage}
+        floatImage={hero.backgroundImage}
       />
+      <Paragraph>
+        My name is André Silveira and I am a software developer.I Currently work
+        with Frontend development with React JS and mobile with React Native
+      </Paragraph>
       <ProjectList projects={PROJECTITEM} />
     </Container>
   )

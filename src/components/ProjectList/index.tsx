@@ -12,14 +12,16 @@ const ProjectList = ({ projects }: ProjectListProps) => {
       <S.Header>
         <S.Title>Projects</S.Title>
       </S.Header>
-      {projects.map(({ title, description, categories, img }) => (
-        <ProjectItem
-          key={title}
-          title={title}
-          img={img}
-          description={description}
-          categories={categories}
-        />
+      {projects.map(({ id, title, description, categories, img }) => (
+        <S.WrapperItem key={title}>
+          <ProjectItem
+            id={id}
+            title={title}
+            img={img}
+            description={description}
+            categories={categories}
+          />
+        </S.WrapperItem>
       ))}
     </S.Wrapper>
   )

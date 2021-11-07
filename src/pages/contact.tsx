@@ -3,6 +3,8 @@ import { Container } from 'components/Container'
 import Head from 'next/head'
 import Image from 'next/image'
 import Hero from 'components/Hero'
+import Paragraph from 'components/Paragraph'
+import Heading from 'components/Heading'
 
 const hero = {
   title: 'Andre Silveira',
@@ -16,20 +18,25 @@ export default function Contact() {
     <Container>
       <Menu />
       <section>
-        <Hero
-          title={hero.title}
-          subtitle={hero.subtitle}
-          backgroundImage={hero.backgroundImage}
-          floatImage={hero.backgroundImage}
-        />
-      </section>
-      <section>
-        <Hero
-          title={hero.title}
-          subtitle={hero.subtitle}
-          backgroundImage={hero.backgroundImage}
-          floatImage={hero.backgroundImage}
-        />
+        <Heading>Contact</Heading>
+        <a
+          href="https://www.linkedin.com/in/alsdede/"
+          style={{ textDecoration: 'none' }}
+        >
+          <Paragraph>Linkedin</Paragraph>
+        </a>
+        <a
+          href="https://github.com/alsdede/"
+          style={{ textDecoration: 'none' }}
+        >
+          <Paragraph>Github</Paragraph>
+        </a>
+        <a
+          href="mailto:als.andresilveira@gmail.com"
+          style={{ textDecoration: 'none' }}
+        >
+          <Paragraph>als.andresilveira@gmail.com</Paragraph>
+        </a>
       </section>
     </Container>
   )

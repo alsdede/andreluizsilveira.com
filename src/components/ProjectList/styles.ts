@@ -4,11 +4,20 @@ import media from 'styled-media-query'
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     ${media.greaterThan('medium')`
-      margin
+
     `}
   `}
 `
 
+export const WrapperItem = styled.a`
+  ${({ theme }) => css`
+    text-decoration: none;
+    cursor: pointer;
+    ${media.greaterThan('medium')`
+
+    `}
+  `}
+`
 export const Header = styled.div`
   ${({ theme }) => css`
     ${media.greaterThan('medium')`
