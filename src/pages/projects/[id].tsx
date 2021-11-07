@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <Container>
       <Menu />
-      <h1>project:{id}</h1>
+      <h1 style={{ color: 'white' }}>project:{id}</h1>
     </Container>
   )
 }
