@@ -3,7 +3,8 @@ import { Container } from 'components/Container'
 
 import Paragraph from 'components/Paragraph'
 import Heading from 'components/Heading'
-
+import { Linkedin, Github } from '@styled-icons/bootstrap/'
+import { Email } from '@styled-icons/entypo/Email'
 export default function Contact() {
   return (
     <Container>

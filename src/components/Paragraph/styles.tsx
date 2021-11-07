@@ -7,7 +7,7 @@ export const Wrapper = styled.h2`
     line-height: ${theme.font.sizes.large};
     font-weight: ${theme.font.light};
     color: #f3f3f3;
-    margin-bottom: 1.2rem;
+    margin-bottom: 3.2rem;
     ${media.greaterThan('medium')`
       font-size: 2.4rem;
       line-height: 2.4rem;
