@@ -2,6 +2,7 @@ import { useRouter } from 'next/dist/client/router'
 import Menu from 'components/Menu'
 import * as S from './styles'
 import { Container } from 'components/Container'
+
 const Index = () => {
   const router = useRouter()
   const { id } = router.query
