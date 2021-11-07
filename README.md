@@ -1,5 +1,5 @@
 ### You can check the project here
-https://lovelystay-challenge-j009npfn1-alsdede.vercel.app/
+
 
 ## Getting Started
 
