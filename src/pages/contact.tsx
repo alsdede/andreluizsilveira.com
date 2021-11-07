@@ -7,19 +7,30 @@ import Hero from 'components/Hero'
 const hero = {
   title: 'Andre Silveira',
   subtitle: 'Software develper',
-  backgroundImage: '/img/andre.jpeg'
+  backgroundImage: '/img/sky.png',
+  floatImage: 'img/andre.jpeg'
 }
 
 export default function Contact() {
   return (
     <Container>
       <Menu />
-      <Hero
-        title={hero.title}
-        subtitle={hero.subtitle}
-        backgroundImage={hero.backgroundImage}
-        floatImage={hero.backgroundImage}
-      />
+      <section>
+        <Hero
+          title={hero.title}
+          subtitle={hero.subtitle}
+          backgroundImage={hero.backgroundImage}
+          floatImage={hero.backgroundImage}
+        />
+      </section>
+      <section>
+        <Hero
+          title={hero.title}
+          subtitle={hero.subtitle}
+          backgroundImage={hero.backgroundImage}
+          floatImage={hero.backgroundImage}
+        />
+      </section>
     </Container>
   )
 }

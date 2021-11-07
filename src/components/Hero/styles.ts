@@ -25,10 +25,11 @@ const wrapperModifiers = {
 }
 
 export const Wrapper = styled.section<WrapperProps>`
-  ${({ alignment }) => css`
+  ${({ alignment, theme }) => css`
     position: relative;
     height: 33rem;
     display: grid;
+    margin-bottom: ${theme.spacings.large};
     &::after {
       content: '';
       position: absolute;
@@ -54,12 +55,14 @@ export const FloatImageWrapper = styled.div`
     max-height: 23rem;
     max-width: 100%;
     align-self: end;
+
     img {
       position: relative;
       object-fit: contain;
     }
     ${media.greaterThan('medium')`
       max-height: 32rem;
+
     `}
   `}
 `
