@@ -1,9 +1,9 @@
 import Menu from 'components/Menu'
 import { Container } from 'components/Container'
 import Hero from 'components/Hero'
-import Home from 'templates/Home'
+import BannerSlider from 'components/BannerSlider'
 import Paragraph from 'components/Paragraph'
-
+import BannerMock from 'components/BannerSlider/mock'
 import ProjectList from 'components/ProjectList'
 
 const hero = {
@@ -39,6 +39,13 @@ const PROJECTITEM = [
     categories: ['BACKEND', 'MOBILE']
   }
 ]
-export default function Index() {
-  return <Home />
+export default function Home() {
+  return (
+    <Container>
+      <Menu />
+      <BannerSlider items={BannerMock} />
+
+      <ProjectList projects={PROJECTITEM} />
+    </Container>
+  )
 }

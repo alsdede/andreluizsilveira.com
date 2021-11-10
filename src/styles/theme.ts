@@ -1,6 +1,6 @@
 export default {
   grid: {
-    container: '108rem',
+    container: '130rem',
     gutter: '3.2rem'
   },
   border: {
@@ -8,7 +8,7 @@ export default {
   },
   font: {
     family:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+      "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
     normal: 400,
     bold: 600,
@@ -18,18 +18,21 @@ export default {
       medium: '1.6rem',
       large: '1.8rem',
       xlarge: '2.0rem',
-      xxlarge: '2.8rem'
+      xxlarge: '2.8rem',
+      huge: '5.2rem'
     }
   },
   colors: {
-    primary: '#1E90FF',
+    primary: '#F231A5',
     secondary: '#3CD3C1',
-    mainBg: '#0F0F0F',
+    mainBg: '#06092B',
+    lightBg: '#F2F2F2',
     white: '#FAFAFA',
     black: '#030517',
     lightGray: '#EAEAEA',
     gray: '#8F8F8F',
-    darkGray: '#2E2F42'
+    darkGray: '#2E2F42',
+    red: '#FF6347'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -46,5 +49,9 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50
+  },
+  transition: {
+    default: '0.3s ease-in-out',
+    fast: '0.1s ease-in-out'
   }
-}
+} as const

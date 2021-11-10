@@ -53,7 +53,7 @@ export const ImageBox = styled.div`
   }
   ${media.greaterThan('medium')`
       height: 42rem;
-      margin-bottom: 6rem;
+      margin-bottom: 6  rem;
 
     `}
 `
